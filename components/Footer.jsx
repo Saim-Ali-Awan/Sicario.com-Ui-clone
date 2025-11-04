@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Icons } from "@/components/Icons";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
