@@ -32,22 +32,22 @@ export default function ContactPage() {
     <div className="flex flex-col items-center w-full px-4 bg-background">
       {/* Header */}
       <div className="w-full max-w-[862px] flex flex-col items-center mt-20 mb-16">
-        <h1 className="text-[32px] md:text-[48px] mb-6 text-center font-semibold font-serif text-foreground">
+        <h1 className="text-[32px] md:text-[48px] mb-6 text-center font-semibold font-cursive text-foreground">
           Contact Sicario.com
         </h1>
-        <p className="text-center max-w-[640px] text-base md:text-lg text-muted-foreground font-normal md:leading-[28px] font-sans">
+        <p className="text-center max-w-[640px] text-base md:text-lg text-muted-foreground font-normal md:leading-[28px] font-cursive">
           Have questions about our AI-powered e-commerce solutions? Reach out to our team for support, inquiries, or feedback.
         </p>
       </div>
 
       {/* Contact Form */}
       <div className="w-full max-w-[640px] mb-16">
-        <h2 className="text-2xl md:text-3xl mb-4 text-center font-semibold font-serif text-foreground">
+        <h2 className="text-2xl md:text-3xl mb-4 text-center font-semibold font-cursive text-foreground">
           Send Us a Message
         </h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className='p-3.5'>
-            <label htmlFor="name" className="text-sm font-sans text-foreground">
+            <label htmlFor="name" className="text-sm font-cursive text-foreground">
               Name
             </label>
             <Input
@@ -61,7 +61,7 @@ export default function ContactPage() {
             />
           </div>
           <div className='p-3.5'>
-            <label htmlFor="email" className="text-sm font-sans text-foreground">
+            <label htmlFor="email" className="text-sm font-cursive text-foreground">
               Email
             </label>
             <Input
@@ -76,7 +76,7 @@ export default function ContactPage() {
             />
           </div>
           <div className='p-3.5'>
-            <label htmlFor="message" className="text-sm font-sans text-foreground">
+            <label htmlFor="message" className="text-sm font-cursive text-foreground">
               Message
             </label>
             <Textarea
@@ -98,7 +98,7 @@ export default function ContactPage() {
             Send Message
           </Button>
           {formStatus && (
-            <p className={`text-sm font-sans ${formStatus.includes('successfully') ? 'text-primary' : 'text-destructive'}`}>
+            <p className={`text-sm font-cursive ${formStatus.includes('successfully') ? 'text-primary' : 'text-destructive'}`}>
               {formStatus}
             </p>
           )}
@@ -107,7 +107,7 @@ export default function ContactPage() {
 
       {/* Contact Information */}
       <div className="w-full max-w-[862px] mb-16">
-        <h2 className="text-2xl md:text-3xl mb-6 text-center font-semibold font-serif text-foreground">
+        <h2 className="text-2xl md:text-3xl mb-6 text-center font-semibold font-cursive text-foreground">
           Get in Touch
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-6">
@@ -119,8 +119,8 @@ export default function ContactPage() {
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center max-w-[200px]">
               <item.icon className="p-1.5 rounded-full text-primary text-xl bg-primary/10 mb-2" />
-              <h3 className="text-lg font-semibold text-foreground font-sans">{item.title}</h3>
-              <Link href={item.href} className="text-sm text-muted-foreground font-sans hover:text-primary">
+              <h3 className="text-lg font-semibold text-foreground font-cursive">{item.title}</h3>
+              <Link href={item.href} className="text-sm text-muted-foreground font-cursive hover:text-primary">
                 {item.value}
               </Link>
             </div>
@@ -130,10 +130,10 @@ export default function ContactPage() {
 
       {/* CTA Section */}
       <div className="w-full max-w-[862px] mb-20 text-center">
-        <h2 className="text-2xl md:text-3xl mb-4 font-semibold font-serif text-foreground">
+        <h2 className="text-2xl md:text-3xl mb-4 font-semibold font-cursive text-foreground">
           Ready to Start Your E-Commerce Journey?
         </h2>
-        <p className="text-base md:text-lg text-muted-foreground font-normal font-sans mb-6 max-w-[640px] mx-auto">
+        <p className="text-base md:text-lg text-muted-foreground font-normal font-cursive mb-6 max-w-[640px] mx-auto">
           Explore Sicario.com’s AI-powered tools and start building your dream store today.
         </p>
         <Link
