@@ -10,20 +10,20 @@ export default function HeroSection() {
   return (
     <main>
       <Navbar />
-    <div className="flex flex-col items-center w-full px-4 bg-background mt-20">
+    <div className="flex flex-col items-center w-full px-4 bg-background mt-20 ">
       <div className="w-full max-w-[862px] bg-background flex flex-col items-center mb-20">
         {/* Badge and Intro Text */}
         <div className="flex items-center p-2 pr-3 bg-background rounded-[--radius] gap-3 mb-5 border border-muted/10">
-          <div className="text-xs font-serif leading-4 tracking-[0.04em] bg-primary text-primary-foreground px-1.5 py-0.5 rounded-[--radius]">
+          <div className="text-xs font-cursive leading-4 tracking-[0.04em] bg-primary text-primary-foreground px-1.5 py-0.5 rounded-[--radius]">
             New
           </div>
-          <p className="text-base leading-5 text-foreground font-normal font-serif text-center max-w-[640px]">
+          <p className="text-base leading-5 text-foreground font-normal font-cursive text-center max-w-[640px]">
             AI-Powered stores are here!
           </p>
         </div>
 
         {/* Headline */}
-        <h1 className="text-[32px] md:text-[64px] mb-6 text-center font-semibold font-serif text-foreground">
+        <h1 className="text-[32px] md:text-[64px] mb-6 text-center font-semibold font-cursive text-foreground">
           The All-in-One solution for your E-Commerce business
         </h1>
 
@@ -79,10 +79,10 @@ export default function HeroSection() {
     </div>
     <section className="flex flex-col mt-3 items-center w-full px-4 sm:px-6 bg-background dark:bg-background">
       <div className="max-w-[700px] text-center flex flex-col items-center mb-16 md:mb-20">
-        <h2 className="text-3xl md:text-5xl font-bold mb-3 mt-4 leading-[130%] font-serif text-primary dark:text-primary">
+        <h2 className="text-3xl md:text-5xl font-bold mb-3 mt-4 leading-[130%] font-cursive text-primary dark:text-primary">
           Start selling in minutes.
         </h2>
-        <p className="max-w-[460px] mb-2 text-base leading-6 text-foreground font-normal font-serif dark:text-foreground ">
+        <p className="max-w-[460px] mb-2 text-base leading-6 text-foreground font-normal font-cursive dark:text-foreground ">
           Sicario.com comes bundled with a done-for-you, conversion-optimized setup to get you up and running fast!
         </p>
         <div className='flex flex-row flex-wrap xl:flex-nowrap items-center justify-center gap-6 mt-10 w-full'>
